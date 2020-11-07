@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		41AD08DE255691340085AB19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08DD255691340085AB19 /* AppDelegate.swift */; };
-		41AD08E0255691340085AB19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08DF255691340085AB19 /* SceneDelegate.swift */; };
-		41AD08E2255691340085AB19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08E1255691340085AB19 /* ViewController.swift */; };
+		41AD08E2255691340085AB19 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08E1255691340085AB19 /* Map.swift */; };
 		41AD08E5255691340085AB19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08E3255691340085AB19 /* Main.storyboard */; };
 		41AD08E72556913B0085AB19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08E62556913B0085AB19 /* Assets.xcassets */; };
 		41AD08EA2556913B0085AB19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08E82556913B0085AB19 /* LaunchScreen.storyboard */; };
 		41AD08F52556913B0085AB19 /* PrintfulTechTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08F42556913B0085AB19 /* PrintfulTechTaskTests.swift */; };
 		41AD09002556913B0085AB19 /* PrintfulTechTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08FF2556913B0085AB19 /* PrintfulTechTaskUITests.swift */; };
+		41AD0923255696BB0085AB19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD0922255696BB0085AB19 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,7 @@
 /* Begin PBXFileReference section */
 		41AD08DA255691340085AB19 /* PrintfulTechTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrintfulTechTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AD08DD255691340085AB19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41AD08DF255691340085AB19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		41AD08E1255691340085AB19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41AD08E1255691340085AB19 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		41AD08E4255691340085AB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41AD08E62556913B0085AB19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41AD08E92556913B0085AB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		41AD08FB2556913B0085AB19 /* PrintfulTechTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintfulTechTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AD08FF2556913B0085AB19 /* PrintfulTechTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfulTechTaskUITests.swift; sourceTree = "<group>"; };
 		41AD09012556913B0085AB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41AD0922255696BB0085AB19 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +99,11 @@
 		41AD08DC255691340085AB19 /* PrintfulTechTask */ = {
 			isa = PBXGroup;
 			children = (
-				41AD08DD255691340085AB19 /* AppDelegate.swift */,
-				41AD08DF255691340085AB19 /* SceneDelegate.swift */,
-				41AD08E1255691340085AB19 /* ViewController.swift */,
-				41AD08E3255691340085AB19 /* Main.storyboard */,
-				41AD08E62556913B0085AB19 /* Assets.xcassets */,
-				41AD08E82556913B0085AB19 /* LaunchScreen.storyboard */,
 				41AD08EB2556913B0085AB19 /* Info.plist */,
+				41AD08E1255691340085AB19 /* Map.swift */,
+				41AD08E3255691340085AB19 /* Main.storyboard */,
+				41AD08E82556913B0085AB19 /* LaunchScreen.storyboard */,
+				41AD09102556959B0085AB19 /* Utils */,
 			);
 			path = PrintfulTechTask;
 			sourceTree = "<group>";
@@ -126,6 +124,16 @@
 				41AD09012556913B0085AB19 /* Info.plist */,
 			);
 			path = PrintfulTechTaskUITests;
+			sourceTree = "<group>";
+		};
+		41AD09102556959B0085AB19 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				41AD08DD255691340085AB19 /* AppDelegate.swift */,
+				41AD0922255696BB0085AB19 /* SceneDelegate.swift */,
+				41AD08E62556913B0085AB19 /* Assets.xcassets */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41AD08E2255691340085AB19 /* ViewController.swift in Sources */,
+				41AD08E2255691340085AB19 /* Map.swift in Sources */,
 				41AD08DE255691340085AB19 /* AppDelegate.swift in Sources */,
-				41AD08E0255691340085AB19 /* SceneDelegate.swift in Sources */,
+				41AD0923255696BB0085AB19 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L66A9JGMWU;
 				INFOPLIST_FILE = PrintfulTechTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L66A9JGMWU;
 				INFOPLIST_FILE = PrintfulTechTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
