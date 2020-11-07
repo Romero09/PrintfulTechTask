@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41AD08DE255691340085AB19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08DD255691340085AB19 /* AppDelegate.swift */; };
+		41AD08E0255691340085AB19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08DF255691340085AB19 /* SceneDelegate.swift */; };
+		41AD08E2255691340085AB19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08E1255691340085AB19 /* ViewController.swift */; };
+		41AD08E5255691340085AB19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08E3255691340085AB19 /* Main.storyboard */; };
+		41AD08E72556913B0085AB19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08E62556913B0085AB19 /* Assets.xcassets */; };
+		41AD08EA2556913B0085AB19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08E82556913B0085AB19 /* LaunchScreen.storyboard */; };
+		41AD08F52556913B0085AB19 /* PrintfulTechTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08F42556913B0085AB19 /* PrintfulTechTaskTests.swift */; };
+		41AD09002556913B0085AB19 /* PrintfulTechTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08FF2556913B0085AB19 /* PrintfulTechTaskUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41AD08F12556913B0085AB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41AD08D2255691340085AB19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41AD08D9255691340085AB19;
+			remoteInfo = PrintfulTechTask;
+		};
+		41AD08FC2556913B0085AB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41AD08D2255691340085AB19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41AD08D9255691340085AB19;
+			remoteInfo = PrintfulTechTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41AD08DA255691340085AB19 /* PrintfulTechTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrintfulTechTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41AD08DD255691340085AB19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41AD08DF255691340085AB19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		41AD08E1255691340085AB19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41AD08E4255691340085AB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41AD08E62556913B0085AB19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41AD08E92556913B0085AB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41AD08EB2556913B0085AB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41AD08F02556913B0085AB19 /* PrintfulTechTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintfulTechTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41AD08F42556913B0085AB19 /* PrintfulTechTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfulTechTaskTests.swift; sourceTree = "<group>"; };
+		41AD08F62556913B0085AB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41AD08FB2556913B0085AB19 /* PrintfulTechTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintfulTechTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41AD08FF2556913B0085AB19 /* PrintfulTechTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfulTechTaskUITests.swift; sourceTree = "<group>"; };
+		41AD09012556913B0085AB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41AD08D7255691340085AB19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AD08ED2556913B0085AB19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AD08F82556913B0085AB19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41AD08D1255691340085AB19 = {
+			isa = PBXGroup;
+			children = (
+				41AD08DC255691340085AB19 /* PrintfulTechTask */,
+				41AD08F32556913B0085AB19 /* PrintfulTechTaskTests */,
+				41AD08FE2556913B0085AB19 /* PrintfulTechTaskUITests */,
+				41AD08DB255691340085AB19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41AD08DB255691340085AB19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41AD08DA255691340085AB19 /* PrintfulTechTask.app */,
+				41AD08F02556913B0085AB19 /* PrintfulTechTaskTests.xctest */,
+				41AD08FB2556913B0085AB19 /* PrintfulTechTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41AD08DC255691340085AB19 /* PrintfulTechTask */ = {
+			isa = PBXGroup;
+			children = (
+				41AD08DD255691340085AB19 /* AppDelegate.swift */,
+				41AD08DF255691340085AB19 /* SceneDelegate.swift */,
+				41AD08E1255691340085AB19 /* ViewController.swift */,
+				41AD08E3255691340085AB19 /* Main.storyboard */,
+				41AD08E62556913B0085AB19 /* Assets.xcassets */,
+				41AD08E82556913B0085AB19 /* LaunchScreen.storyboard */,
+				41AD08EB2556913B0085AB19 /* Info.plist */,
+			);
+			path = PrintfulTechTask;
+			sourceTree = "<group>";
+		};
+		41AD08F32556913B0085AB19 /* PrintfulTechTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				41AD08F42556913B0085AB19 /* PrintfulTechTaskTests.swift */,
+				41AD08F62556913B0085AB19 /* Info.plist */,
+			);
+			path = PrintfulTechTaskTests;
+			sourceTree = "<group>";
+		};
+		41AD08FE2556913B0085AB19 /* PrintfulTechTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41AD08FF2556913B0085AB19 /* PrintfulTechTaskUITests.swift */,
+				41AD09012556913B0085AB19 /* Info.plist */,
+			);
+			path = PrintfulTechTaskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41AD08D9255691340085AB19 /* PrintfulTechTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41AD09042556913B0085AB19 /* Build configuration list for PBXNativeTarget "PrintfulTechTask" */;
+			buildPhases = (
+				41AD08D6255691340085AB19 /* Sources */,
+				41AD08D7255691340085AB19 /* Frameworks */,
+				41AD08D8255691340085AB19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrintfulTechTask;
+			productName = PrintfulTechTask;
+			productReference = 41AD08DA255691340085AB19 /* PrintfulTechTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41AD08EF2556913B0085AB19 /* PrintfulTechTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41AD09072556913B0085AB19 /* Build configuration list for PBXNativeTarget "PrintfulTechTaskTests" */;
+			buildPhases = (
+				41AD08EC2556913B0085AB19 /* Sources */,
+				41AD08ED2556913B0085AB19 /* Frameworks */,
+				41AD08EE2556913B0085AB19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41AD08F22556913B0085AB19 /* PBXTargetDependency */,
+			);
+			name = PrintfulTechTaskTests;
+			productName = PrintfulTechTaskTests;
+			productReference = 41AD08F02556913B0085AB19 /* PrintfulTechTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41AD08FA2556913B0085AB19 /* PrintfulTechTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41AD090A2556913B0085AB19 /* Build configuration list for PBXNativeTarget "PrintfulTechTaskUITests" */;
+			buildPhases = (
+				41AD08F72556913B0085AB19 /* Sources */,
+				41AD08F82556913B0085AB19 /* Frameworks */,
+				41AD08F92556913B0085AB19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41AD08FD2556913B0085AB19 /* PBXTargetDependency */,
+			);
+			name = PrintfulTechTaskUITests;
+			productName = PrintfulTechTaskUITests;
+			productReference = 41AD08FB2556913B0085AB19 /* PrintfulTechTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41AD08D2255691340085AB19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					41AD08D9255691340085AB19 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					41AD08EF2556913B0085AB19 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 41AD08D9255691340085AB19;
+					};
+					41AD08FA2556913B0085AB19 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 41AD08D9255691340085AB19;
+					};
+				};
+			};
+			buildConfigurationList = 41AD08D5255691340085AB19 /* Build configuration list for PBXProject "PrintfulTechTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41AD08D1255691340085AB19;
+			productRefGroup = 41AD08DB255691340085AB19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41AD08D9255691340085AB19 /* PrintfulTechTask */,
+				41AD08EF2556913B0085AB19 /* PrintfulTechTaskTests */,
+				41AD08FA2556913B0085AB19 /* PrintfulTechTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41AD08D8255691340085AB19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41AD08EA2556913B0085AB19 /* LaunchScreen.storyboard in Resources */,
+				41AD08E72556913B0085AB19 /* Assets.xcassets in Resources */,
+				41AD08E5255691340085AB19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AD08EE2556913B0085AB19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AD08F92556913B0085AB19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41AD08D6255691340085AB19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41AD08E2255691340085AB19 /* ViewController.swift in Sources */,
+				41AD08DE255691340085AB19 /* AppDelegate.swift in Sources */,
+				41AD08E0255691340085AB19 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AD08EC2556913B0085AB19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41AD08F52556913B0085AB19 /* PrintfulTechTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AD08F72556913B0085AB19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41AD09002556913B0085AB19 /* PrintfulTechTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41AD08F22556913B0085AB19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41AD08D9255691340085AB19 /* PrintfulTechTask */;
+			targetProxy = 41AD08F12556913B0085AB19 /* PBXContainerItemProxy */;
+		};
+		41AD08FD2556913B0085AB19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41AD08D9255691340085AB19 /* PrintfulTechTask */;
+			targetProxy = 41AD08FC2556913B0085AB19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41AD08E3255691340085AB19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41AD08E4255691340085AB19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41AD08E82556913B0085AB19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41AD08E92556913B0085AB19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41AD09022556913B0085AB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41AD09032556913B0085AB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41AD09052556913B0085AB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L66A9JGMWU;
+				INFOPLIST_FILE = PrintfulTechTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.PrintfulTechTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41AD09062556913B0085AB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L66A9JGMWU;
+				INFOPLIST_FILE = PrintfulTechTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.PrintfulTechTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41AD09082556913B0085AB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L66A9JGMWU;
+				INFOPLIST_FILE = PrintfulTechTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.PrintfulTechTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrintfulTechTask.app/PrintfulTechTask";
+			};
+			name = Debug;
+		};
+		41AD09092556913B0085AB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L66A9JGMWU;
+				INFOPLIST_FILE = PrintfulTechTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.PrintfulTechTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrintfulTechTask.app/PrintfulTechTask";
+			};
+			name = Release;
+		};
+		41AD090B2556913B0085AB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L66A9JGMWU;
+				INFOPLIST_FILE = PrintfulTechTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.PrintfulTechTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrintfulTechTask;
+			};
+			name = Debug;
+		};
+		41AD090C2556913B0085AB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L66A9JGMWU;
+				INFOPLIST_FILE = PrintfulTechTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.PrintfulTechTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrintfulTechTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41AD08D5255691340085AB19 /* Build configuration list for PBXProject "PrintfulTechTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41AD09022556913B0085AB19 /* Debug */,
+				41AD09032556913B0085AB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41AD09042556913B0085AB19 /* Build configuration list for PBXNativeTarget "PrintfulTechTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41AD09052556913B0085AB19 /* Debug */,
+				41AD09062556913B0085AB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41AD09072556913B0085AB19 /* Build configuration list for PBXNativeTarget "PrintfulTechTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41AD09082556913B0085AB19 /* Debug */,
+				41AD09092556913B0085AB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41AD090A2556913B0085AB19 /* Build configuration list for PBXNativeTarget "PrintfulTechTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41AD090B2556913B0085AB19 /* Debug */,
+				41AD090C2556913B0085AB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41AD08D2255691340085AB19 /* Project object */;
+}
