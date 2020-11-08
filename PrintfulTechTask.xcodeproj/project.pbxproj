@@ -3,18 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		41AD08DE255691340085AB19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08DD255691340085AB19 /* AppDelegate.swift */; };
-		41AD08E2255691340085AB19 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08E1255691340085AB19 /* Map.swift */; };
+		41AD08E2255691340085AB19 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08E1255691340085AB19 /* MapViewController.swift */; };
 		41AD08E5255691340085AB19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08E3255691340085AB19 /* Main.storyboard */; };
 		41AD08E72556913B0085AB19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08E62556913B0085AB19 /* Assets.xcassets */; };
 		41AD08EA2556913B0085AB19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08E82556913B0085AB19 /* LaunchScreen.storyboard */; };
 		41AD08F52556913B0085AB19 /* PrintfulTechTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08F42556913B0085AB19 /* PrintfulTechTaskTests.swift */; };
 		41AD09002556913B0085AB19 /* PrintfulTechTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08FF2556913B0085AB19 /* PrintfulTechTaskUITests.swift */; };
 		41AD0923255696BB0085AB19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD0922255696BB0085AB19 /* SceneDelegate.swift */; };
+		41D176962557F2D900E71F61 /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D176952557F2D900E71F61 /* TCPClient.swift */; };
+		41D1769E2557F3BF00E71F61 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D1769D2557F3BF00E71F61 /* Models.swift */; };
+		41D176A32557F48700E71F61 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D176A22557F48700E71F61 /* String+.swift */; };
+		41D176AA25580FAC00E71F61 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D176A925580FAC00E71F61 /* MapInteractor.swift */; };
 		C4D3B2E3ADF5C243CA20B512 /* Pods_PrintfulTechTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C97B15B4A5120CFAE8BAA6 /* Pods_PrintfulTechTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +42,7 @@
 /* Begin PBXFileReference section */
 		41AD08DA255691340085AB19 /* PrintfulTechTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrintfulTechTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AD08DD255691340085AB19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41AD08E1255691340085AB19 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		41AD08E1255691340085AB19 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		41AD08E4255691340085AB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41AD08E62556913B0085AB19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41AD08E92556913B0085AB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +54,10 @@
 		41AD08FF2556913B0085AB19 /* PrintfulTechTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfulTechTaskUITests.swift; sourceTree = "<group>"; };
 		41AD09012556913B0085AB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41AD0922255696BB0085AB19 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		41D176952557F2D900E71F61 /* TCPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPClient.swift; sourceTree = "<group>"; };
+		41D1769D2557F3BF00E71F61 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		41D176A22557F48700E71F61 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		41D176A925580FAC00E71F61 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
 		43C97B15B4A5120CFAE8BAA6 /* Pods_PrintfulTechTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrintfulTechTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D8367FCF5EA14E8B11D0684 /* Pods-PrintfulTechTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrintfulTechTask.debug.xcconfig"; path = "Target Support Files/Pods-PrintfulTechTask/Pods-PrintfulTechTask.debug.xcconfig"; sourceTree = "<group>"; };
 		FEF0582F1AD531823665BED9 /* Pods-PrintfulTechTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrintfulTechTask.release.xcconfig"; path = "Target Support Files/Pods-PrintfulTechTask/Pods-PrintfulTechTask.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,10 +114,11 @@
 		41AD08DC255691340085AB19 /* PrintfulTechTask */ = {
 			isa = PBXGroup;
 			children = (
+				41D176942557F2BB00E71F61 /* Network */,
 				41AD08EB2556913B0085AB19 /* Info.plist */,
-				41AD08E1255691340085AB19 /* Map.swift */,
 				41AD08E3255691340085AB19 /* Main.storyboard */,
 				41AD08E82556913B0085AB19 /* LaunchScreen.storyboard */,
+				41D176B4255819BE00E71F61 /* Map */,
 				41AD09102556959B0085AB19 /* Utils */,
 			);
 			path = PrintfulTechTask;
@@ -139,8 +148,27 @@
 				41AD08DD255691340085AB19 /* AppDelegate.swift */,
 				41AD0922255696BB0085AB19 /* SceneDelegate.swift */,
 				41AD08E62556913B0085AB19 /* Assets.xcassets */,
+				41D176A22557F48700E71F61 /* String+.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		41D176942557F2BB00E71F61 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				41D176952557F2D900E71F61 /* TCPClient.swift */,
+				41D1769D2557F3BF00E71F61 /* Models.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		41D176B4255819BE00E71F61 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				41AD08E1255691340085AB19 /* MapViewController.swift */,
+				41D176A925580FAC00E71F61 /* MapInteractor.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		881B3E98E77E43F527D5AE63 /* Frameworks */ = {
@@ -157,7 +185,6 @@
 				6D8367FCF5EA14E8B11D0684 /* Pods-PrintfulTechTask.debug.xcconfig */,
 				FEF0582F1AD531823665BED9 /* Pods-PrintfulTechTask.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -335,9 +362,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41AD08E2255691340085AB19 /* Map.swift in Sources */,
+				41D176962557F2D900E71F61 /* TCPClient.swift in Sources */,
+				41AD08E2255691340085AB19 /* MapViewController.swift in Sources */,
 				41AD08DE255691340085AB19 /* AppDelegate.swift in Sources */,
 				41AD0923255696BB0085AB19 /* SceneDelegate.swift in Sources */,
+				41D176A32557F48700E71F61 /* String+.swift in Sources */,
+				41D176AA25580FAC00E71F61 /* MapInteractor.swift in Sources */,
+				41D1769E2557F3BF00E71F61 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

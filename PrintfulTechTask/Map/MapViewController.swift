@@ -7,13 +7,17 @@
 
 import UIKit
 
-class Map: UIViewController {
+
+class MapViewController: UIViewController {
+
+    var interactor: MapInteractor!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.interactor = MapInteractor()
+        self.interactor.connect()
+
     }
-
-
 }
 
