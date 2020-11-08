@@ -15,6 +15,7 @@
 		41AD08F52556913B0085AB19 /* PrintfulTechTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08F42556913B0085AB19 /* PrintfulTechTaskTests.swift */; };
 		41AD09002556913B0085AB19 /* PrintfulTechTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08FF2556913B0085AB19 /* PrintfulTechTaskUITests.swift */; };
 		41AD0923255696BB0085AB19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD0922255696BB0085AB19 /* SceneDelegate.swift */; };
+		C4D3B2E3ADF5C243CA20B512 /* Pods_PrintfulTechTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C97B15B4A5120CFAE8BAA6 /* Pods_PrintfulTechTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		41AD08FF2556913B0085AB19 /* PrintfulTechTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfulTechTaskUITests.swift; sourceTree = "<group>"; };
 		41AD09012556913B0085AB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41AD0922255696BB0085AB19 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		43C97B15B4A5120CFAE8BAA6 /* Pods_PrintfulTechTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrintfulTechTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D8367FCF5EA14E8B11D0684 /* Pods-PrintfulTechTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrintfulTechTask.debug.xcconfig"; path = "Target Support Files/Pods-PrintfulTechTask/Pods-PrintfulTechTask.debug.xcconfig"; sourceTree = "<group>"; };
+		FEF0582F1AD531823665BED9 /* Pods-PrintfulTechTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrintfulTechTask.release.xcconfig"; path = "Target Support Files/Pods-PrintfulTechTask/Pods-PrintfulTechTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D3B2E3ADF5C243CA20B512 /* Pods_PrintfulTechTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,8 @@
 				41AD08F32556913B0085AB19 /* PrintfulTechTaskTests */,
 				41AD08FE2556913B0085AB19 /* PrintfulTechTaskUITests */,
 				41AD08DB255691340085AB19 /* Products */,
+				ABF82560339BEA26D1CEC0DA /* Pods */,
+				881B3E98E77E43F527D5AE63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +143,24 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		881B3E98E77E43F527D5AE63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43C97B15B4A5120CFAE8BAA6 /* Pods_PrintfulTechTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABF82560339BEA26D1CEC0DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D8367FCF5EA14E8B11D0684 /* Pods-PrintfulTechTask.debug.xcconfig */,
+				FEF0582F1AD531823665BED9 /* Pods-PrintfulTechTask.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41AD09042556913B0085AB19 /* Build configuration list for PBXNativeTarget "PrintfulTechTask" */;
 			buildPhases = (
+				E384EBA271B54A9784AFC4D5 /* [CP] Check Pods Manifest.lock */,
 				41AD08D6255691340085AB19 /* Sources */,
 				41AD08D7255691340085AB19 /* Frameworks */,
 				41AD08D8255691340085AB19 /* Resources */,
+				299814A5DE180FE61CFF5B31 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +287,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		299814A5DE180FE61CFF5B31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrintfulTechTask/Pods-PrintfulTechTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrintfulTechTask/Pods-PrintfulTechTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PrintfulTechTask/Pods-PrintfulTechTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E384EBA271B54A9784AFC4D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrintfulTechTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41AD08D6255691340085AB19 /* Sources */ = {
@@ -441,6 +510,7 @@
 		};
 		41AD09052556913B0085AB19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D8367FCF5EA14E8B11D0684 /* Pods-PrintfulTechTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -461,6 +531,7 @@
 		};
 		41AD09062556913B0085AB19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEF0582F1AD531823665BED9 /* Pods-PrintfulTechTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
