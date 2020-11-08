@@ -9,15 +9,15 @@ import Foundation
 import CoreLocation
 
 protocol MapViewModelProtocol {
-    var users: Binding<[User]> { get }
+    var users: Binding<[MapAnnotationModel]> { get }
 
-    func updateUserList(userList: [User])
+    func updateUserList(userList: [UserData])
     func updateUerLocation(location: [LocationUpdate])
 }
 
 class MapViewModel: MapViewModelProtocol {
 
-    var users: Binding<[User]>
+    var users: Binding<[MapAnnotationModel]>
     var interacotr: MapInteractorProviding
 
     init(interactor: MapInteractorProviding = MapInteractor()) {
@@ -27,23 +27,17 @@ class MapViewModel: MapViewModelProtocol {
         self.interacotr.connect()
     }
 
-    func updateUserList(userList: [User]) {
-        self.users.value = userList
+    func updateUserList(userList: [UserData]) {
+
+        self.users.value = userList.map { MapAnnotationModel(userData: $0)}
     }
 
     func updateUerLocation(location: [LocationUpdate]) {
-        let currentUsers = self.users.value
-
-        let updated = currentUsers.map { user -> User in
-            var updatedUser = user
+        self.users.value.forEach { user in
             if let location = location.first(where: { $0.userId == user.id }) {
-                updatedUser.lat = location.lat
-                updatedUser.lon = location.lon
+                user.updateLocation(lat: location.lat, lon: location.lon)
             }
-            return updatedUser
         }
-
-        self.users.value = updated
     }
 
 }

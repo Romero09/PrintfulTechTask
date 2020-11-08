@@ -21,6 +21,7 @@
 		41D176AA25580FAC00E71F61 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D176A925580FAC00E71F61 /* MapInteractor.swift */; };
 		41D176C52558207100E71F61 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D176C42558207100E71F61 /* Binding.swift */; };
 		41D176CA2558211B00E71F61 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D176C92558211B00E71F61 /* MapViewModel.swift */; };
+		41D176CF25584A3800E71F61 /* MapAnnotationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D176CE25584A3800E71F61 /* MapAnnotationModel.swift */; };
 		C4D3B2E3ADF5C243CA20B512 /* Pods_PrintfulTechTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C97B15B4A5120CFAE8BAA6 /* Pods_PrintfulTechTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		41D176A925580FAC00E71F61 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
 		41D176C42558207100E71F61 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		41D176C92558211B00E71F61 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		41D176CE25584A3800E71F61 /* MapAnnotationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationModel.swift; sourceTree = "<group>"; };
 		43C97B15B4A5120CFAE8BAA6 /* Pods_PrintfulTechTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrintfulTechTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D8367FCF5EA14E8B11D0684 /* Pods-PrintfulTechTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrintfulTechTask.debug.xcconfig"; path = "Target Support Files/Pods-PrintfulTechTask/Pods-PrintfulTechTask.debug.xcconfig"; sourceTree = "<group>"; };
 		FEF0582F1AD531823665BED9 /* Pods-PrintfulTechTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrintfulTechTask.release.xcconfig"; path = "Target Support Files/Pods-PrintfulTechTask/Pods-PrintfulTechTask.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				41AD08E1255691340085AB19 /* MapViewController.swift */,
 				41D176A925580FAC00E71F61 /* MapInteractor.swift */,
 				41D176C92558211B00E71F61 /* MapViewModel.swift */,
+				41D176CE25584A3800E71F61 /* MapAnnotationModel.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41D176962557F2D900E71F61 /* TCPClient.swift in Sources */,
+				41D176CF25584A3800E71F61 /* MapAnnotationModel.swift in Sources */,
 				41AD08E2255691340085AB19 /* MapViewController.swift in Sources */,
 				41AD08DE255691340085AB19 /* AppDelegate.swift in Sources */,
 				41D176C52558207100E71F61 /* Binding.swift in Sources */,

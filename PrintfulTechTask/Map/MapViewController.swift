@@ -24,34 +24,25 @@ class MapViewController: UIViewController {
     }
 
     private func bind() {
-        mapViewModel.users.bind(listener: { [unowned self] in print("+++\($0)")} )
+        mapViewModel.users.bind(listener: { [unowned self] in self.mapView.addAnnotations($0)} )
     }
 }
 
 extension MapViewController: MKMapViewDelegate {
-  // 1
-  func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-    // 2
 
-    // 3
-    let identifier = "artwork"
-    var view: MKMarkerAnnotationView
-    // 4
-    if let dequeuedView = mapView.dequeueReusableAnnotationView(
-      withIdentifier: identifier) as? MKMarkerAnnotationView {
-      dequeuedView.annotation = annotation
-      view = dequeuedView
-    } else {
-      // 5
-      view = MKMarkerAnnotationView(
-        annotation: annotation,
-        reuseIdentifier: identifier)
-      view.canShowCallout = true
-      view.calloutOffset = CGPoint(x: -5, y: 5)
-      view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+
+        let Identifier = "map-pin"
+        let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: Identifier) ?? MKAnnotationView(annotation: annotation, reuseIdentifier: Identifier)
+
+        if annotation is MapAnnotationModel {
+            annotationView.canShowCallout = true
+            annotationView.image =  UIImage(imageLiteralResourceName: "map-pin")
+            return annotationView
+        }
+
+        return nil
     }
-    return view
-  }
 }
 
 private extension MKMapView {

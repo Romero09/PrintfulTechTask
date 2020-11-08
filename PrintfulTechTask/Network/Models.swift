@@ -7,16 +7,16 @@
 
 import Foundation
 
-struct User {
+struct UserData {
     var id: String
     var name: String
     var imageURL: String
     var lat: Double
     var lon: Double
 
-    static func initFrom(userData: [Substring.SubSequence]) -> User? {
+    static func initFrom(userData: [Substring.SubSequence]) -> UserData? {
         if userData.count == 5, let lat = Double(userData[3]), let lon =  Double(userData[4]){
-            return User(id: String(userData[0]), name: String(userData[1]), imageURL: String(userData[2]), lat: lat, lon: lon)
+            return UserData(id: String(userData[0]), name: String(userData[1]), imageURL: String(userData[2]), lat: lat, lon: lon)
         }
         return nil
     }

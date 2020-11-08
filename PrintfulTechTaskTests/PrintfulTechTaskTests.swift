@@ -17,9 +17,9 @@ class PrintfulTechTaskTests: XCTestCase {
 //        rawData.removeSubrange(range)
         let noPrefix = rawData.dropFirst(CommandType.USERLIST.rawValue.count + 1)
         let users = noPrefix.split(separator: ";")
-        let parsedUsers = users.map { user -> User in
+        let parsedUsers = users.map { user -> UserData in
             let userData = user.split(separator: ",")
-            return User(id: String(userData[0]), name: String(userData[1]), imageURL: String(userData[2]), lat: Double(userData[3])!, lon: Double(userData[4])!)
+            return UserData(id: String(userData[0]), name: String(userData[1]), imageURL: String(userData[2]), lat: Double(userData[3])!, lon: Double(userData[4])!)
         }
         print("+++\(parsedUsers)")
 

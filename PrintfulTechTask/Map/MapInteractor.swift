@@ -27,9 +27,9 @@ class MapInteractor: MapInteractorProviding {
     private func handleUserList(data: String) {
         let noPrefix = data.dropFirst(CommandType.USERLIST.rawValue.count + 1)
         let rawUsers = noPrefix.split(separator: ";")
-        let parsedUsers = rawUsers.compactMap { user -> User? in
+        let parsedUsers = rawUsers.compactMap { user -> UserData? in
             let userData = user.split(separator: ",")
-            return User.initFrom(userData: userData)
+            return UserData.initFrom(userData: userData)
         }
         self.viewModel?.updateUserList(userList: parsedUsers)
     }
