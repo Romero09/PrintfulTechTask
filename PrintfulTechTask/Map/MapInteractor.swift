@@ -7,9 +7,15 @@
 
 import Foundation
 
-class MapInteractor {
+protocol MapInteractorProviding {
+    var viewModel: MapViewModelProtocol? { get set }
+    func connect()
+}
 
-    var client: TCPClient?
+class MapInteractor: MapInteractorProviding {
+
+    public var viewModel: MapViewModelProtocol?
+    private var client: TCPClient?
 
     public func connect() {
         self.client = TCPClient()
@@ -25,7 +31,7 @@ class MapInteractor {
             let userData = user.split(separator: ",")
             return User.initFrom(userData: userData)
         }
-        print("+++\(parsedUsers)")
+        self.viewModel?.updateUserList(userList: parsedUsers)
     }
 
     private func handleUpdateLocation(data: String) {
@@ -36,7 +42,6 @@ class MapInteractor {
             let locationData = String(location)
             return LocationUpdate.initFrom(locationData: locationData)
         }
-
-        print("+++\(parsedLocation)")
+        self.viewModel?.updateUerLocation(location: parsedLocation)
     }
 }
