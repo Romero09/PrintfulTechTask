@@ -35,12 +35,18 @@ extension MapViewController: MKMapViewDelegate {
         let Identifier = "map-pin"
         let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: Identifier) ?? MKAnnotationView(annotation: annotation, reuseIdentifier: Identifier)
 
-        if annotation is MapAnnotationModel {
+        if let annotation = annotation as? MapAnnotationModel {
             annotationView.canShowCallout = true
             annotationView.image =  UIImage(imageLiteralResourceName: "map-pin")
+
+            if let imageData = annotation.image {
+                let image = UIImage(data: imageData)
+                let imgview = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+                imgview.image = image
+                annotationView.leftCalloutAccessoryView = imgview
+            }
             return annotationView
         }
-
         return nil
     }
 }

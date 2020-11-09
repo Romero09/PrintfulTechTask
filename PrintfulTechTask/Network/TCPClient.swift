@@ -25,7 +25,7 @@ class TCPClient: NSObject {
     public var onUpdateEvent: ((String) -> ())?
 
     public func initializeConection() {
-        self.socket = GCDAsyncSocket(delegate: self, delegateQueue: .main)
+        self.socket = GCDAsyncSocket(delegate: self, delegateQueue: DispatchQueue.global())
         do {
             try socket?.connect(toHost: addr, onPort: port)
         } catch let e {

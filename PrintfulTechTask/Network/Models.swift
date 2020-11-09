@@ -13,6 +13,7 @@ struct UserData {
     var imageURL: String
     var lat: Double
     var lon: Double
+    var image: Data?
 
     static func initFrom(userData: [Substring.SubSequence]) -> UserData? {
         if userData.count == 5, let lat = Double(userData[3]), let lon =  Double(userData[4]){

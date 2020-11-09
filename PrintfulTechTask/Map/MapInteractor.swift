@@ -29,9 +29,15 @@ class MapInteractor: MapInteractorProviding {
         let rawUsers = noPrefix.split(separator: ";")
         let parsedUsers = rawUsers.compactMap { user -> UserData? in
             let userData = user.split(separator: ",")
-            return UserData.initFrom(userData: userData)
+            var user = UserData.initFrom(userData: userData)
+            let image = self.loadUserImage(urlPath: user?.imageURL)
+            user?.image = image
+            return user
         }
-        self.viewModel?.updateUserList(userList: parsedUsers)
+
+        DispatchQueue.main.async {
+            self.viewModel?.updateUserList(userList: parsedUsers)
+        }
     }
 
     private func handleUpdateLocation(data: String) {
@@ -42,6 +48,15 @@ class MapInteractor: MapInteractorProviding {
             let locationData = String(location)
             return LocationUpdate.initFrom(locationData: locationData)
         }
-        self.viewModel?.updateUerLocation(location: parsedLocation)
+        
+        DispatchQueue.main.async {
+            self.viewModel?.updateUerLocation(location: parsedLocation)
+        }
     }
+
+    private func loadUserImage(urlPath: String?) -> Data? {
+        guard let urlPath = urlPath, let url = URL(string: urlPath) else { return nil }
+        return try? Data(contentsOf: url)
+    }
+    
 }
