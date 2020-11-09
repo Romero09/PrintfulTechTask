@@ -8,8 +8,8 @@
 import Foundation
 import CoreLocation
 
-protocol MapViewModelProtocol {
-    var users: Binding<[MapAnnotationModel]> { get }
+protocol MapViewModelProtocol: class {
+    var annotations: Binding<[MapAnnotationModel]> { get }
 
     func updateUserList(userList: [UserData])
     func updateUerLocation(location: [LocationUpdate])
@@ -17,11 +17,11 @@ protocol MapViewModelProtocol {
 
 class MapViewModel: MapViewModelProtocol {
 
-    var users: Binding<[MapAnnotationModel]>
+    var annotations: Binding<[MapAnnotationModel]>
     var interacotr: MapInteractorProviding
 
     init(interactor: MapInteractorProviding = MapInteractor()) {
-        self.users = Binding([])
+        self.annotations = Binding([])
         self.interacotr = interactor
         self.interacotr.viewModel = self
         self.interacotr.connect()
@@ -29,13 +29,32 @@ class MapViewModel: MapViewModelProtocol {
 
     func updateUserList(userList: [UserData]) {
 
-        self.users.value = userList.map { MapAnnotationModel(userData: $0)}
+        let annotations = userList.map { MapAnnotationModel(userData: $0) }
+        annotations.forEach { annotation in
+            self.getAddress(lat: annotation.lat, lon: annotation.lon) { address in
+                annotation.subtitle = address
+            }
+        }
+        self.annotations.value = annotations
     }
 
     func updateUerLocation(location: [LocationUpdate]) {
-        self.users.value.forEach { user in
+        self.annotations.value.forEach { user in
             if let location = location.first(where: { $0.userId == user.id }) {
+                self.getAddress(lat: location.lat, lon: location.lon) { address in
+                    user.subtitle = address
+                }
                 user.updateLocation(lat: location.lat, lon: location.lon)
+            }
+        }
+    }
+
+    private func getAddress(lat: Double, lon: Double, completion: @escaping (String?) -> Void) {
+        CLGeocoder.init().reverseGeocodeLocation(CLLocation.init(latitude: lat, longitude: lon)) { (places, _) in
+            if let places = places {
+                completion(places[0].name)
+            } else {
+                completion(nil)
             }
         }
     }

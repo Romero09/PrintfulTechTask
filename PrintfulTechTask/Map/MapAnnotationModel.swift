@@ -20,9 +20,7 @@ class MapAnnotationModel: NSObject, MKAnnotation {
         return name
     }
 
-    var subtitle: String? {
-        return "address"
-    }
+    dynamic var subtitle: String?
 
     dynamic var coordinate: CLLocationCoordinate2D
 

@@ -14,14 +14,17 @@ protocol MapInteractorProviding {
 
 class MapInteractor: MapInteractorProviding {
 
-    public var viewModel: MapViewModelProtocol?
-    private var client: TCPClient?
+    public weak var viewModel: MapViewModelProtocol?
+    private var client: TCPClientProviding
+
+    init(client: TCPClientProviding = TCPClient()) {
+        self.client = client
+    }
 
     public func connect() {
-        self.client = TCPClient()
-        self.client?.onUserListEvent = { [weak self] data in self?.handleUserList(data: data) }
-        self.client?.onUpdateEvent = { [weak self] data in self?.handleUpdateLocation(data: data) }
-        self.client?.initializeConection()
+        self.client.onUserListEvent = { [weak self] data in self?.handleUserList(data: data) }
+        self.client.onUpdateEvent = { [weak self] data in self?.handleUpdateLocation(data: data) }
+        self.client.initializeConection()
     }
 
     private func handleUserList(data: String) {
@@ -30,7 +33,7 @@ class MapInteractor: MapInteractorProviding {
         let parsedUsers = rawUsers.compactMap { user -> UserData? in
             let userData = user.split(separator: ",")
             var user = UserData.initFrom(userData: userData)
-            let image = self.loadUserImage(urlPath: user?.imageURL)
+            let image = self.fetchUserImage(urlPath: user?.imageURL)
             user?.image = image
             return user
         }
@@ -54,7 +57,7 @@ class MapInteractor: MapInteractorProviding {
         }
     }
 
-    private func loadUserImage(urlPath: String?) -> Data? {
+    private func fetchUserImage(urlPath: String?) -> Data? {
         guard let urlPath = urlPath, let url = URL(string: urlPath) else { return nil }
         return try? Data(contentsOf: url)
     }

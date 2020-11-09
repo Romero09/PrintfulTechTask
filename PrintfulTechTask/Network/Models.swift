@@ -21,7 +21,6 @@ struct UserData {
         }
         return nil
     }
-
 }
 
 struct LocationUpdate {

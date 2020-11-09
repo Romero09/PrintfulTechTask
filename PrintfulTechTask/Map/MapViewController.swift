@@ -24,10 +24,17 @@ class MapViewController: UIViewController {
     }
 
     private func bind() {
-        mapViewModel.users.bind(listener: { [unowned self] in self.mapView.addAnnotations($0)} )
+        mapViewModel.annotations.bind(listener: { [unowned self] in self.updateAnnotations(annotations: $0) } )
+    }
+
+    private func updateAnnotations(annotations: [MapAnnotationModel]) {
+        let currentAnnotations = self.mapView.annotations
+        self.mapView.removeAnnotations(currentAnnotations)
+        self.mapView.addAnnotations(annotations)
     }
 }
 
+// MARK: MKMapViewDelegate
 extension MapViewController: MKMapViewDelegate {
 
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -52,14 +59,12 @@ extension MapViewController: MKMapViewDelegate {
 }
 
 private extension MKMapView {
-  func centerToLocation(
-    _ location: CLLocation,
-    regionRadius: CLLocationDistance = 1000
-  ) {
-    let coordinateRegion = MKCoordinateRegion(
-      center: location.coordinate,
-      latitudinalMeters: regionRadius,
-      longitudinalMeters: regionRadius)
-    setRegion(coordinateRegion, animated: true)
-  }
+
+    func centerToLocation(_ location: CLLocation, regionRadius: CLLocationDistance = 1000) {
+        let coordinateRegion = MKCoordinateRegion(
+            center: location.coordinate,
+            latitudinalMeters: regionRadius,
+            longitudinalMeters: regionRadius)
+        setRegion(coordinateRegion, animated: true)
+    }
 }

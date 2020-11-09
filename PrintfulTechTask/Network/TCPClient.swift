@@ -8,16 +8,22 @@
 import Foundation
 import CocoaAsyncSocket
 
-let addr = "ios-test.printful.lv"
-let port: UInt16 = 6111
-
 enum CommandType: String {
     case AUTHORIZE
     case USERLIST
     case UPDATE
 }
 
-class TCPClient: NSObject {
+protocol TCPClientProviding {
+    var onUserListEvent: ((String) -> ())? { get set }
+    var onUpdateEvent: ((String) -> ())? { get set }
+    func initializeConection()
+}
+
+class TCPClient: NSObject, TCPClientProviding {
+
+    let address = "ios-test.printful.lv"
+    let port: UInt16 = 6111
 
     private var socket: GCDAsyncSocket?
     
@@ -26,15 +32,7 @@ class TCPClient: NSObject {
 
     public func initializeConection() {
         self.socket = GCDAsyncSocket(delegate: self, delegateQueue: DispatchQueue.global())
-        do {
-            try socket?.connect(toHost: addr, onPort: port)
-        } catch let e {
-           print(e)
-        }
-
-        let data = "\(CommandType.AUTHORIZE.rawValue) pavelvetl92@gmail.com \n".data(using: .utf8)
-        socket?.write(data, withTimeout: -1, tag: 1)
-        socket?.readData(withTimeout: -1, tag: 1)
+        try? self.socket?.connect(toHost: address, onPort: port)
     }
 
     deinit {
@@ -43,14 +41,13 @@ class TCPClient: NSObject {
 
 }
 
+// MARK: GCDAsyncSocketDelegate
 extension TCPClient: GCDAsyncSocketDelegate {
 
     func socket(_ socket : GCDAsyncSocket, didConnectToHost host:String, port p:UInt16) {
-        print("Connected to \(addr) on port \(port).")
-    }
-
-    func socket(_ sock: GCDAsyncSocket, didWriteDataWithTag tag: Int) {
-        print("data has written tag \(tag)")
+        let data = "\(CommandType.AUTHORIZE.rawValue) pavelvetl92@gmail.com\n".data(using: .utf8)
+        socket.write(data, withTimeout: -1, tag: 1)
+        socket.readData(withTimeout: -1, tag: 1)
     }
 
     func socket(_ sock: GCDAsyncSocket, didRead data: Data, withTag tag: Int) {
@@ -62,8 +59,6 @@ extension TCPClient: GCDAsyncSocketDelegate {
         } else if eventData.hasPrefix(CommandType.USERLIST.rawValue) {
             self.onUserListEvent?(eventData)
         }
-
-        print("Data: \(eventData) on tag: \(tag).")
     }
 
 }
