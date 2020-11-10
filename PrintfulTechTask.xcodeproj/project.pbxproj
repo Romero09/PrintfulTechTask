@@ -12,7 +12,7 @@
 		41AD08E5255691340085AB19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08E3255691340085AB19 /* Main.storyboard */; };
 		41AD08E72556913B0085AB19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08E62556913B0085AB19 /* Assets.xcassets */; };
 		41AD08EA2556913B0085AB19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08E82556913B0085AB19 /* LaunchScreen.storyboard */; };
-		41AD08F52556913B0085AB19 /* PrintfulTechTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08F42556913B0085AB19 /* PrintfulTechTaskTests.swift */; };
+		41AD08F52556913B0085AB19 /* MapInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08F42556913B0085AB19 /* MapInteractorTests.swift */; };
 		41AD09002556913B0085AB19 /* PrintfulTechTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08FF2556913B0085AB19 /* PrintfulTechTaskUITests.swift */; };
 		41AD0923255696BB0085AB19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD0922255696BB0085AB19 /* SceneDelegate.swift */; };
 		41D176962557F2D900E71F61 /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D176952557F2D900E71F61 /* TCPClient.swift */; };
@@ -51,7 +51,7 @@
 		41AD08E92556913B0085AB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41AD08EB2556913B0085AB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41AD08F02556913B0085AB19 /* PrintfulTechTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintfulTechTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		41AD08F42556913B0085AB19 /* PrintfulTechTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfulTechTaskTests.swift; sourceTree = "<group>"; };
+		41AD08F42556913B0085AB19 /* MapInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractorTests.swift; sourceTree = "<group>"; };
 		41AD08F62556913B0085AB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41AD08FB2556913B0085AB19 /* PrintfulTechTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintfulTechTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AD08FF2556913B0085AB19 /* PrintfulTechTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfulTechTaskUITests.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		41AD08F32556913B0085AB19 /* PrintfulTechTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				41AD08F42556913B0085AB19 /* PrintfulTechTaskTests.swift */,
+				41AD08F42556913B0085AB19 /* MapInteractorTests.swift */,
 				41AD08F62556913B0085AB19 /* Info.plist */,
 			);
 			path = PrintfulTechTaskTests;
@@ -388,7 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41AD08F52556913B0085AB19 /* PrintfulTechTaskTests.swift in Sources */,
+				41AD08F52556913B0085AB19 /* MapInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

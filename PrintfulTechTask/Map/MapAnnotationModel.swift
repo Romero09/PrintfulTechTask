@@ -39,8 +39,6 @@ class MapAnnotationModel: NSObject, MKAnnotation {
     }
 
     public func updateLocation(lat: Double, lon: Double) {
-        UIView.animate(withDuration: 0.5) {
-            self.coordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
-        }
+        self.coordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
     }
 }

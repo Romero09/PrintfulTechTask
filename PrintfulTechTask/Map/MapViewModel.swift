@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreLocation
+import UIKit
 
 protocol MapViewModelProtocol: class {
     var annotations: Binding<[MapAnnotationModel]> { get }
@@ -44,7 +45,9 @@ class MapViewModel: MapViewModelProtocol {
                 self.getAddress(lat: location.lat, lon: location.lon) { address in
                     user.subtitle = address
                 }
-                user.updateLocation(lat: location.lat, lon: location.lon)
+                UIView.animate(withDuration: 0.5) {
+                    user.updateLocation(lat: location.lat, lon: location.lon)
+                }
             }
         }
     }
