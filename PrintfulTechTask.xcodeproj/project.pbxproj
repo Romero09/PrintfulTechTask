@@ -3,18 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		41AD08DE255691340085AB19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08DD255691340085AB19 /* AppDelegate.swift */; };
-		41AD08E0255691340085AB19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08DF255691340085AB19 /* SceneDelegate.swift */; };
-		41AD08E2255691340085AB19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08E1255691340085AB19 /* ViewController.swift */; };
+		41AD08E2255691340085AB19 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08E1255691340085AB19 /* MapViewController.swift */; };
 		41AD08E5255691340085AB19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08E3255691340085AB19 /* Main.storyboard */; };
 		41AD08E72556913B0085AB19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08E62556913B0085AB19 /* Assets.xcassets */; };
 		41AD08EA2556913B0085AB19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AD08E82556913B0085AB19 /* LaunchScreen.storyboard */; };
-		41AD08F52556913B0085AB19 /* PrintfulTechTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08F42556913B0085AB19 /* PrintfulTechTaskTests.swift */; };
+		41AD08F52556913B0085AB19 /* MapInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08F42556913B0085AB19 /* MapInteractorTests.swift */; };
 		41AD09002556913B0085AB19 /* PrintfulTechTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD08FF2556913B0085AB19 /* PrintfulTechTaskUITests.swift */; };
+		41AD0923255696BB0085AB19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD0922255696BB0085AB19 /* SceneDelegate.swift */; };
+		41D176962557F2D900E71F61 /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D176952557F2D900E71F61 /* TCPClient.swift */; };
+		41D1769E2557F3BF00E71F61 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D1769D2557F3BF00E71F61 /* Models.swift */; };
+		41D176A32557F48700E71F61 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D176A22557F48700E71F61 /* String+.swift */; };
+		41D176AA25580FAC00E71F61 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D176A925580FAC00E71F61 /* MapInteractor.swift */; };
+		41D176C52558207100E71F61 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D176C42558207100E71F61 /* Binding.swift */; };
+		41D176CA2558211B00E71F61 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D176C92558211B00E71F61 /* MapViewModel.swift */; };
+		41D176CF25584A3800E71F61 /* MapAnnotationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D176CE25584A3800E71F61 /* MapAnnotationModel.swift */; };
+		C4D3B2E3ADF5C243CA20B512 /* Pods_PrintfulTechTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C97B15B4A5120CFAE8BAA6 /* Pods_PrintfulTechTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,18 +45,28 @@
 /* Begin PBXFileReference section */
 		41AD08DA255691340085AB19 /* PrintfulTechTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrintfulTechTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AD08DD255691340085AB19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41AD08DF255691340085AB19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		41AD08E1255691340085AB19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41AD08E1255691340085AB19 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		41AD08E4255691340085AB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41AD08E62556913B0085AB19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41AD08E92556913B0085AB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41AD08EB2556913B0085AB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41AD08F02556913B0085AB19 /* PrintfulTechTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintfulTechTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		41AD08F42556913B0085AB19 /* PrintfulTechTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfulTechTaskTests.swift; sourceTree = "<group>"; };
+		41AD08F42556913B0085AB19 /* MapInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractorTests.swift; sourceTree = "<group>"; };
 		41AD08F62556913B0085AB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41AD08FB2556913B0085AB19 /* PrintfulTechTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintfulTechTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AD08FF2556913B0085AB19 /* PrintfulTechTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfulTechTaskUITests.swift; sourceTree = "<group>"; };
 		41AD09012556913B0085AB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41AD0922255696BB0085AB19 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		41D176952557F2D900E71F61 /* TCPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPClient.swift; sourceTree = "<group>"; };
+		41D1769D2557F3BF00E71F61 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		41D176A22557F48700E71F61 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		41D176A925580FAC00E71F61 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		41D176C42558207100E71F61 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		41D176C92558211B00E71F61 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		41D176CE25584A3800E71F61 /* MapAnnotationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationModel.swift; sourceTree = "<group>"; };
+		43C97B15B4A5120CFAE8BAA6 /* Pods_PrintfulTechTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrintfulTechTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D8367FCF5EA14E8B11D0684 /* Pods-PrintfulTechTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrintfulTechTask.debug.xcconfig"; path = "Target Support Files/Pods-PrintfulTechTask/Pods-PrintfulTechTask.debug.xcconfig"; sourceTree = "<group>"; };
+		FEF0582F1AD531823665BED9 /* Pods-PrintfulTechTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrintfulTechTask.release.xcconfig"; path = "Target Support Files/Pods-PrintfulTechTask/Pods-PrintfulTechTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D3B2E3ADF5C243CA20B512 /* Pods_PrintfulTechTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +102,8 @@
 				41AD08F32556913B0085AB19 /* PrintfulTechTaskTests */,
 				41AD08FE2556913B0085AB19 /* PrintfulTechTaskUITests */,
 				41AD08DB255691340085AB19 /* Products */,
+				ABF82560339BEA26D1CEC0DA /* Pods */,
+				881B3E98E77E43F527D5AE63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +120,12 @@
 		41AD08DC255691340085AB19 /* PrintfulTechTask */ = {
 			isa = PBXGroup;
 			children = (
-				41AD08DD255691340085AB19 /* AppDelegate.swift */,
-				41AD08DF255691340085AB19 /* SceneDelegate.swift */,
-				41AD08E1255691340085AB19 /* ViewController.swift */,
-				41AD08E3255691340085AB19 /* Main.storyboard */,
-				41AD08E62556913B0085AB19 /* Assets.xcassets */,
-				41AD08E82556913B0085AB19 /* LaunchScreen.storyboard */,
+				41D176942557F2BB00E71F61 /* Network */,
 				41AD08EB2556913B0085AB19 /* Info.plist */,
+				41AD08E3255691340085AB19 /* Main.storyboard */,
+				41AD08E82556913B0085AB19 /* LaunchScreen.storyboard */,
+				41D176B4255819BE00E71F61 /* Map */,
+				41AD09102556959B0085AB19 /* Utils */,
 			);
 			path = PrintfulTechTask;
 			sourceTree = "<group>";
@@ -113,7 +133,7 @@
 		41AD08F32556913B0085AB19 /* PrintfulTechTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				41AD08F42556913B0085AB19 /* PrintfulTechTaskTests.swift */,
+				41AD08F42556913B0085AB19 /* MapInteractorTests.swift */,
 				41AD08F62556913B0085AB19 /* Info.plist */,
 			);
 			path = PrintfulTechTaskTests;
@@ -128,6 +148,55 @@
 			path = PrintfulTechTaskUITests;
 			sourceTree = "<group>";
 		};
+		41AD09102556959B0085AB19 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				41AD08DD255691340085AB19 /* AppDelegate.swift */,
+				41AD0922255696BB0085AB19 /* SceneDelegate.swift */,
+				41AD08E62556913B0085AB19 /* Assets.xcassets */,
+				41D176A22557F48700E71F61 /* String+.swift */,
+				41D176C42558207100E71F61 /* Binding.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		41D176942557F2BB00E71F61 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				41D176952557F2D900E71F61 /* TCPClient.swift */,
+				41D1769D2557F3BF00E71F61 /* Models.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		41D176B4255819BE00E71F61 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				41AD08E1255691340085AB19 /* MapViewController.swift */,
+				41D176A925580FAC00E71F61 /* MapInteractor.swift */,
+				41D176C92558211B00E71F61 /* MapViewModel.swift */,
+				41D176CE25584A3800E71F61 /* MapAnnotationModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		881B3E98E77E43F527D5AE63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43C97B15B4A5120CFAE8BAA6 /* Pods_PrintfulTechTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABF82560339BEA26D1CEC0DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D8367FCF5EA14E8B11D0684 /* Pods-PrintfulTechTask.debug.xcconfig */,
+				FEF0582F1AD531823665BED9 /* Pods-PrintfulTechTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41AD09042556913B0085AB19 /* Build configuration list for PBXNativeTarget "PrintfulTechTask" */;
 			buildPhases = (
+				E384EBA271B54A9784AFC4D5 /* [CP] Check Pods Manifest.lock */,
 				41AD08D6255691340085AB19 /* Sources */,
 				41AD08D7255691340085AB19 /* Frameworks */,
 				41AD08D8255691340085AB19 /* Resources */,
+				299814A5DE180FE61CFF5B31 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +324,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		299814A5DE180FE61CFF5B31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrintfulTechTask/Pods-PrintfulTechTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrintfulTechTask/Pods-PrintfulTechTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PrintfulTechTask/Pods-PrintfulTechTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E384EBA271B54A9784AFC4D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrintfulTechTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		41AD08D6255691340085AB19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41AD08E2255691340085AB19 /* ViewController.swift in Sources */,
+				41D176962557F2D900E71F61 /* TCPClient.swift in Sources */,
+				41D176CF25584A3800E71F61 /* MapAnnotationModel.swift in Sources */,
+				41AD08E2255691340085AB19 /* MapViewController.swift in Sources */,
 				41AD08DE255691340085AB19 /* AppDelegate.swift in Sources */,
-				41AD08E0255691340085AB19 /* SceneDelegate.swift in Sources */,
+				41D176C52558207100E71F61 /* Binding.swift in Sources */,
+				41AD0923255696BB0085AB19 /* SceneDelegate.swift in Sources */,
+				41D176A32557F48700E71F61 /* String+.swift in Sources */,
+				41D176AA25580FAC00E71F61 /* MapInteractor.swift in Sources */,
+				41D1769E2557F3BF00E71F61 /* Models.swift in Sources */,
+				41D176CA2558211B00E71F61 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41AD08F52556913B0085AB19 /* PrintfulTechTaskTests.swift in Sources */,
+				41AD08F52556913B0085AB19 /* MapInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,12 +553,14 @@
 		};
 		41AD09052556913B0085AB19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D8367FCF5EA14E8B11D0684 /* Pods-PrintfulTechTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L66A9JGMWU;
 				INFOPLIST_FILE = PrintfulTechTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,12 +574,14 @@
 		};
 		41AD09062556913B0085AB19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEF0582F1AD531823665BED9 /* Pods-PrintfulTechTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L66A9JGMWU;
 				INFOPLIST_FILE = PrintfulTechTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
